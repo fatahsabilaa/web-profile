@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set warna heading */
+h2,
+h3 {
+  color: rgb(0, 45, 88);
+}
+/* Selesai */
+
+.profile header {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: rgb(0, 45, 88);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Pengaturan gambar */
+.featured-image {
+  width: 35%;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  max-width: 200px;
+}
+/* Selesai */
+
+/* Bayangan box */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+/* Selesai */
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: rgb(0, 45, 88);
+  text-align: center;
+  color: white;
+}
+
+.photo-profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Konten Utama */
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+/* Selesai */
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+/* Profil / konten samping */
+aside {
+  flex: 2;
+  text-align: left;
+}
+/* Selesai */
+
+/* header */
+header {
+  display: inline;
+}
+/* Selesai */
+
+/* Mengatur responsif dengan maksimal lebar layar 1200px dan dibawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+/* Selesai */
+
+/* Mengatur responsif dengan maksimal lebar layar 768px dan dibawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  nav.show ul {
+    display: flex;
+  }
+}
+/* Selesai */
